@@ -13,5 +13,11 @@ document.head.insertAdjacentHTML("beforeend", `
 		pointer-events: none !important;
 		user-select: none !important;
 	}
+	.mosaic_cell img {
+		transition: transform .1s ease;
+	}
+	.mosaic_cell.hover img {
+		transform: scale(1.25);
+	}
 	</style>
 `);
