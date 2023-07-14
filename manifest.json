@@ -1,0 +1,24 @@
+{
+	"manifest_version": 3,
+	"name": "BigStock Enhancer",
+	"description": "Prevents BigStock from starting a search while typing in the search bar. Also prevents image previews from opening while hovering.",
+	"version": "1.2",
+	"icons": {
+		"16": "icon.png",
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+	"content_scripts":[
+		{
+		  "matches":[
+			"https://*.bigstockphoto.com/*"
+		  ],
+		  "js": ["content.js"],
+		  "run_at": "document_idle"
+		}
+	],
+	"permissions": [
+		"activeTab",
+		"scripting"
+	]
+}
