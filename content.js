@@ -17,7 +17,7 @@ document.head.insertAdjacentHTML("beforeend", `
 		transition: transform .1s ease;
 	}
 	.mosaic_cell.hover img {
-		transform: scale(1.25);
+		transform: scale(1.5);
 	}
 	</style>
 `);
